@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/midterm.css">
+    <script src="index.js"></script>
+    <title>Document</title>
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous"> <!--created this file in advance for bootstrap just to make it easier to get started.-->
+</head>
+<body>
+    <div class="container-fluid background">
+        <div class="row">
+            <div class="col-md-12 flayer"> 
+                <div class="transparent">you see nothing</div>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="displaybar">
+                            <p>Home        about        Catagories        Contact</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 transparent"> spacer </div>
+                <div class="col-md-8 testcolor">
+                    <div class="title">
+                            Move CPTS 489 to Afternoon in Winter!
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7 text">
+                            <p>The image you see to the right represents our teacher absolutely chilling from the extreme
+                                cold weather out there! please sight this patition at the bottom to support our move to an Afternoon
+                                class schedule. 
+                                The image you see on the right is a representation of our professor every morning, 
+                                right before his much-needed coffee that helps thaw him out a bit. Imagine having 
+                                to wake up at 4 or 5 AM in the dead of winter just to prepare for class. Technically, 
+                                since the sun hasn’t even risen yet, can we really call 4 AM "morning"? The frigid cold, 
+                                combined with the mental fog of early hours, is an unfair battle both for students and faculty
+                                 alike. No one should have to endure sub-zero temperatures just to attend an 8 AM lecture. 
+                                 Morning brain freeze inevitably leads to null pointer exceptions in our heads! For these
+                                reasons, we humbly 
+                                request the administration to consider shifting CPTS 489 to a more humane
+                            </p>
+                        </div>
+                        <div class="col-md-1 image">
+                            <image class="img" src="images/s-l400-2.jpg" alt=""/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="petition">Fill out Form!</div>
+                    </div>
+                    <div class="row pcenter">
+                        <form name="myForm" action="/submit" method="POST" onsubmit="return validateInput()"> 
+                            <fieldset legend="Login">
+                                <div>
+                                <div class="row">
+                                    <label  class="first_n" for="first_n"> First Name: </label>
+                                    <input type="text" id="first_n" name="first_n" placeholder="first name" required/>
+                                </div>
+                                <div class="row">
+                                    <label class="last_n" for="last_n"> Last Name:</label>
+                                    <input type="text" id="last_n" name="last_n" placeholder="last name" required/>
+                                </div>
+                                <div class="row">
+                                    <label class="gender" for="gender"> Gender:</label>
+                                    <select id="gender" name="gender">
+                                    <option value="">--select--</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    <label class="age" for="age"> Age:</label>
+                                    <input type="number" id="age" name="age" min = "0" placeholder="age" required/>
+                                </div>
+                                <div class="row">
+                                    <label class="fpl" for="fpl"> Favorite Programming language:</label>
+                                    <select id="fpl" name="fpl">
+                                    <option value="">--select--</option>
+                                    <option>Python</option>
+                                    <option>Java</option>
+                                    <option>C++</option>
+                                    <option>C</option>
+                                    <option>lua</option>
+                                    </select required>
+                                </div>
+                                <div class="row">
+                                    <label class="ides" for="ides"> Integrated Development Environment:</label>
+                                    <select id="ides" name="ides">
+                                    <option value="">--select--</option>
+                                    <option>Visual Studio Code</option>
+                                    <option>IntelliJ IDEA</option>
+                                    <option>Sublime Text</option>
+                                    <option>Visual Studio Community</option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    <label class="muf" for="muf">Most frequently used Frameworks/Libraries </label>
+                                    <select id="muf" name="muf">
+                                    <option value="">--select--</option>
+                                    <option>React</option>
+                                    <option>Angular</option>
+                                    <option>Django</option>
+                                    <option>Express</option>
+                                    <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    <label class="vc" for="state">Version Control</label>
+                                    <select id="vc" name="vc">
+                                    <option value="">--select--</option>
+                                    <option>Git</option>
+                                    <option>SVN (Subversion)</option>
+                                    <option>Mercurial</option>
+                                    <option>Another</option>
+                                    </select>
+                                </div>
+                                <script>
+                                    function submission() {
+                                      alert("Submission complete");
+                                    }
+                                </script>
+                                <div>
+                                    <button class="button" onclick="submission">Submit survey</button> 
+                                </div>
+                            </div>
+                            <div class="row"> 
+                                <table>
+                                    <tr>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Gender</th>
+                                        <th>Age</th>
+                                        <th>IDE</th>
+                                        <th>Favorite Programming language</th>
+                                        <th>Most Frequent Libraries</th>
+                                        <th>Version Control</th>
+                                    </tr>
+                                    <tbody>
+                                      <% table_data.forEach((row) => {%>
+                                      <tr>
+                                        <td class="telem"><%= row.first_n %></td>
+                                        <td class="telem"><%= row.last_n %></td>
+                                        <td class="telem"><%= row.gender %></td>
+                                        <td class="telem"><%= row.age %></td>
+                                        <td class="telem"><%= row.ides %></td>
+                                        <td class="telem"><%= row.fpl %></td>
+                                        <td class="telem"><%= row.muf %></td>
+                                        <td class="telem"><%= row.vc %></td>
+                                      <!-- create the rest of these to add name, city, and state -->
+                                      </tr>
+                                      <% }) %>
+                                    </tbody>
+                                </table>
+                               
+                            </div>
+                    </div>
+                </div>
+            </div>
+    <script 
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+<!-- <div class="row">
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="first_name" required />
+  </div>
+
+  <div class="row">
+    <label for="last_name">Last Name:</label>
+    <input type="text" id="last_name" name="last_name" required />
+  </div>
+
+  <div class="row">
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+      <option value="">--Select--</option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select>
+  </div>
+
+  <div class="row">
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="0" required />
+  </div>
+
+  <div class="row">
+    <label>Contributes to Open Source?</label>
+    <input type="radio" name="contributes_oss" value="yes" required /> Yes
+    <input type="radio" name="contributes_oss" value="no" /> No
+  </div>
+
+  <div class="row">
+    <label>Are you a student?</label>
+    <input type="radio" name="student" value="yes" required /> Yes
+    <input type="radio" name="student" value="no" /> No
+  </div>
+
+  <div class="row">
+    <label for="employment_status">Employed as:</label>
+    <select name="employment_status" id="employment_status" required>
+      <option value="">--Select--</option>
+      <option>part-time</option>
+      <option>full-time</option>
+      <option>self</option>
+    </select>
+  </div> -->
+
+  
+  <!-- <div class="row">
+    <label for="developer_type">Developer Type:</label>
+    <select name="developer_type" id="developer_type" required onchange="toggleOtherInput()">
+      <option value="">--Select--</option>
+      <option>Full Time</option>
+      <option>Self Employed</option>
+      <option>Part time</option>
+      <option>Other</option>
+    </select>
+  </div>
+
+  <div class="row" id="other_input" style="display:none;">
+    <label for="developer_type_other">If Other, please explain:</label>
+    <input type="text" name="developer_type_other" id="developer_type_other" />
+  </div>
+
+  <div class="row">
+    <button type="submit">Sign Petition</button>
+  </div>
+</fieldset>
+</form> -->

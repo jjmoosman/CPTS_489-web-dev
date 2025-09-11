@@ -1,0 +1,9 @@
+changing decoration from assignment 2
+be comfortable with up to assignment 2 api 
+have a skeleton of homework 2
+do the practice exams
+no react it will be extra credit possibly (not worth it)
+multiple pages
+
+look over the take home midterm for Everette which was more involved which was multi page.
+not difficult just redirecting to another page

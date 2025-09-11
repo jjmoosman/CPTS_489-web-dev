@@ -1,0 +1,74 @@
+.flayer{
+    background-color: grey;
+}
+.displaybar{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.testcolor{
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 12px;
+}
+
+.background{
+    background-color: rgb(238, 230, 230);
+}
+
+.transparent{
+    visibility: hidden;
+}
+
+.title{
+    text-align: center;
+    font-size: 40px;
+    color: darkred;
+}
+
+.pcenter{
+    text-align: center;
+}
+
+.name{
+    border-radius: 8px;
+    width: 80%;
+}
+
+.email{
+    border-radius: 8px;
+}
+
+.petition{
+    color:darkred;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.button{
+    background-color: blue;
+    color: white;
+}
+
+.image{
+    width: 300px;
+    border-radius: 8px;
+}
+
+.mainchunk{
+    background-color: cadetblue;
+}
+
+.subsec{
+    background-color: bisque;
+}
+
+.mainsec{
+    background-color: blueviolet;
+}
+
+.bottom{
+    background-color:coral;
+}
