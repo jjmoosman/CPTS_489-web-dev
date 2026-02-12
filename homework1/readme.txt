@@ -1,0 +1,3 @@
+for this project I ran into a few bumps and I was able to get most of this in and down for the final submission and I plan on going to office hours to get help just polishing and adding more on my own time after. The screenshots were before I realized I was at 150% page size and when viewing and working on this my aspect ratio is currently at 16:10 so if it looks a bit off that can be one of the causes.
+
+Also please leave feedback on things I can look into to improve on web design for the future as there is a lot here and I will need to improve.

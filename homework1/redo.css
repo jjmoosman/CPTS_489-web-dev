@@ -1,0 +1,167 @@
+/*header function controls the position of the logo/top bar of the page*/
+.header{
+    position: fixed;
+    top: 0;
+    background-color: white;
+}
+/*this function was used to hide stuff so the page would be in the proper positioning*/
+.transparent{
+    visibility: hidden;
+}
+
+/*this is the first logo used for the top of the page*/
+.logo{
+    background-color:white;
+}
+
+/*this is the first logo used for the top of the page that I was unable to get in*/
+#login{
+    font-size: 12px;
+    text-align: right;
+    background-color: white;
+}
+
+/* this was the first logo width adjustment*/
+.prlogo{
+    width: 75%;
+}
+/*this is for the header left side that shows where the person is in the pages*/
+.hotlink{
+    background-color: white;
+    font-size: 16px;
+}
+/*this is for the right side of the header which has all of the drop downs that are non functional*/
+.dropdown{
+    background-color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+/*this was an attempt to space out the sidebar from the top part of the browser*/
+.spacer{
+    margin-top: 200px;
+    background-color: white;
+}
+/*this is for the sidebar underline*/
+.sidebar{
+    font-size: 18px;
+    padding-bottom: 20px;
+    /*background-color: white;*/
+    border-bottom: 1px solid lightgray;
+    text-decoration: none;
+    color: black;
+}
+/*this is for hovering over the sidebar to interact with it*/
+a.sidebar:hover{
+    border-bottom: 2px solid #e77500;
+}
+/*this is the main background color used to check where content would go during creation of the site*/
+.main{
+    background-color: white;
+}
+/*this was the set up for the proffessor name along with its underline to seperate it from the description*/
+.profname{
+    margin-top: 20%;
+    font-size: 45px;
+    text-align: center;
+    font-weight: bolder;
+    border-bottom: 5px solid #e77500;
+    text-decoration: none;
+    color: black;
+}
+.profT{
+    font-size: 16px;
+}
+/*this was used for the */
+.desc{
+    border-bottom: 2px solid lightgray;
+}
+/*this was used to adjust the text for the professor information*/
+.hbold{
+    font-size: 12px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    text-decoration: none;
+    color:black;
+    font-weight: bolder;
+}
+/*this is for the image for the professor*/
+.profimg{
+    width:fit-content;
+}
+/*this was used to underline the content under the professor image*/
+.underline{
+    font-size: 16px;
+    color:black;
+    text-decoration: none;
+    border-bottom: 2px solid lightgray;
+}
+/*this created the underlines to text for parts under the image by the description*/
+.undertext{
+    font-size: 16px;
+    border-bottom: 1px solid lightgray;
+    text-decoration: none;
+    color: black;
+}
+/*this is for when highlighting certain parts of the project as an interaction*/
+a.undertext:hover{
+    border-bottom: 1px solid #e77500;
+}
+/*this is a background color used to check areas when putting the project together*/
+.about{
+    background-color: white;
+}
+/*this is for the text on the right hand side and sets its text size*/
+.descripttext{
+    font-size: 16px;
+}
+/*this is for bolding certain parts of the text to make things easier*/
+#tbold{
+    font-size: 12;
+    font-weight: bolder;
+    color: black;
+}
+/*underlined text that is below the three bottom images before the bottom of the page*/
+#underlinetxt{
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 16px;
+    text-decoration: underline;
+}
+/*image adjuster for one of the images*/
+.bimage{
+    max-height: 20%;
+}
+/*this is for the logo and its accompanying text below it*/
+.logoinfo{
+    border-top: 3px solid #e77500;
+    border-width: 100%;
+    background-color: #333;
+    border-bottom: 1px solid black;
+}
+/*this is for the very bottom text that are center and left side*/
+.btext{
+    color: white;
+    background-color: #333;
+}
+/*this is for the background of the bottom text and logo*/
+.vbimg{
+    background-color: #333;
+}
+/*this is for the bottom left and center text for the bottom of the page*/
+#bottomtext{
+    color:white;
+    font-size: 10px;
+}
+/*this is for the bottom right image logo*/
+.finalimg{
+    margin-left: 0;
+    width: 20%;
+}
+/*this is for the bottom right image logo*/
+.bottomllogo{
+    width: 40%;
+    margin-left: 40%;
+    margin-right: 20%;
+    
+}
